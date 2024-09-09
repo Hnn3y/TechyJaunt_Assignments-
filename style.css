@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 1rem;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    transition: background-color 0.3s;
+}
+.navbar a:hover {
+    background-color: #575757;
+}
+.menu {
+    display: flex;
+    gap: 10px;
+}
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+    .menu.active {
+        display: flex;
+    }
+    .menu-icon {
+        display: block;
+        color: white;
+    }
+    input[type="checkbox"] {
+        display: none;
+    }
+    input[type="checkbox"]:checked ~ .menu {
+        display: flex;
+    }
+}
+
+.class {
+    color: azure;
+}
