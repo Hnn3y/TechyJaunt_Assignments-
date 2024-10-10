@@ -3,26 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>TECH-JAUNT ASSIGNMENT</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <title>My Assignment </title>
 </head>
 <body>
-    <div class="header">
-        <h1>
-            WELCOME TO MY ASSIGNMENT PAGE
-        </h1>
-    </div>
-    <div class="navbar">
-        <div class="menu-icon" >
-            <label for="menu-toggle">☰</label>
-            <input type="checkbox" id="menu-toggle">
-            </div>
-        <div class="menu" id="menu">
-            <a href="https://www.techyjaunt.com">Home</a>
-            <a href="#about">About</a>
-            <a href="#Contact">Contact Us</a>
-        </div>
-    </div>
+    <!-- A heading text at the top of the page. -->
+    <header>
+        <h1>Welcome to my website replica sample.</h1>
+        <p>Feel free to explore my work and projects.</p>
+    </header>
 
+    <!-- Navigation links to specific sections.-->
+    <nav>
+        <a href="#image-section">Image Section</a>
+        <a href="#list-section">List Section</a>
+        <a href="#table-section">Table Section</a>
+        <a href="#contact-section">Contact Form</a>
+        <!--A link to the TechJaunt website that opens in a new window.-->
+        <a href="https://www.techyjaunt.com" alt="TechyJaunt.com">Visit TechJaunt</a>
+    </nav>
+
+    <!-- An image and a paragraph of text.-->
+    <div class="section">
+    <section id="image-section">
+        <h2>Motorsports Section</h2>
+        <img src="./F1 logo.jpg" alt="F1 logo">
+        <p>Formula 1 (F1) is the pinnacle of motorsport,
+             where speed meets cutting-edge technology. 
+             Known for its thrilling races known as Grands Prix, F1 features sleek,
+             high-performance cars that can reach speeds over 200 mph. <br>  Formula 1 is not just a race; 
+             it's an exhilarating blend of speed, strategy, 
+             and science that keeps fans on the edge of their seats!</p>
+    </section>
+  </div> 
+
+   <div class="section">
+    <section id="list-section">
+        <h2>My Features includes;</h2>
+        <ul>
+            <li>User-Friendly Interface</li>
+            <li>Responsive Design</li>
+            <li>High Performance</li>
+        </ul>
+    </section>
+</div>
+
+<div class="section">
+    <section id="table-section">
+        <h2>Data Overview</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+            </tr>
+            <tr>
+                <td>Enijeshiku Eniola</td>
+                <td>19</td>
+                <td>Lagos</td>
+            </tr> 
+
+            <table>
+                <tr>
+                <th><td>Github Repo Link</td></th>
+                <th><td> <a href="https://github.com/Hnn3y" alt="Github Repo">CHECK OUT MY GITHUB</a></td></th>
+             </tr>
+             </table>
+             <table>
+                <tr>
+                    <th><td>TWITTER LINK</td></th>
+                    <th><td><a href="https://twitter.com/Henneiiy" alt="Follow me on twitter">FOLLOW ME ON TWITTER </a></td></th>
+                </tr>
+             </table>
+     </table>  
+ </section>
+</div> 
+
+<div class = "section">
+<section id="TechyJaunt-section">
+    <img src="./techy_jaunt_logo-CKoKuldI.svg" alt="techyjaunt">
+    <h2>Find out more about TechyJaunt below</h2> 
+   
+   <h2>Courses Offered;</h2> 
+   <ul>
+     <li>UX Design</li>
+     <li>Product Management</li>
+     <li>Cyber Security</li>
+     <li>Frontend Development</li>
+     <li>Backend Devlopment</li>
+     <li>Data Analysis</li>
+</ul> 
+ <a href="https://techyjaunt.com" alt="TechyJaunt link">Want to know more?, or take a course?</a>
+</section>
+</div>
+<!--Three (3) sctions: a list, a table, and a contact form with necessary input fileds (name, email, password, etc.)  
+-->
+    <section id="contact-section">
+        <h2>WANT TO REACH ME?</h2>
+        <p>If you have any questions, feel free to reach out.</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </section>
 </body>
 </html>
